@@ -14,13 +14,18 @@
       return 100;
       }\n
     </textarea>
-    <input type="submit" value="">
+    <input type="submit" id="submit" value="submit">
   </form>
+  <div id="output-field">
+
+  </div>
   <script>
     let codeArea = document.querySelector("#code-area")
     var myCodeMirror = CodeMirror(codeArea, {
   mode:  "javascript"
 });
+
   </script>
+  <script src="/compile.js"></script>
 </body>
 </html>
