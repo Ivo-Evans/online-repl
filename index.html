@@ -4,8 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ivo's Online Repl</title>
+  <script src="lib/codemirror.js"></script>
+<link rel="stylesheet" href="../lib/codemirror.css">
+<script src="mode/javascript/javascript.js"></script>
 </head>
 <body>
-  
+  <form action="">
+    <textarea name="" id="code-area" cols="30" rows="10">function myScript(){
+      return 100;
+      }\n
+    </textarea>
+    <input type="submit" value="">
+  </form>
+  <script>
+    let codeArea = document.querySelector("#code-area")
+    var myCodeMirror = CodeMirror(codeArea, {
+  mode:  "javascript"
+});
+  </script>
 </body>
 </html>
