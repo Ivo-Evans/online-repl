@@ -2,6 +2,11 @@ const submitButton = document.querySelector('#submit')
 const inputArea = document.querySelector('#code-area')
 const outputArea = document.querySelector('#output-field')
 
+
+var myCodeMirror = CodeMirror(inputArea, {
+mode:  "javascript"
+});
+
 console.log = (...arguments) => {
   arguments.forEach(argument => {
     const newLine = document.createElement('PRE')

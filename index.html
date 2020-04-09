@@ -10,7 +10,8 @@
 </head>
 <body>
   <form action="">
-    <textarea name="" id="code-area" cols="30" rows="10">function myScript(){
+    <textarea name="" id="input-area" cols="30" rows="10">
+      function myScript(){
       return 100;
       }\n
     </textarea>
@@ -19,13 +20,6 @@
   <div id="output-field">
 
   </div>
-  <script>
-    let codeArea = document.querySelector("#code-area")
-    var myCodeMirror = CodeMirror(codeArea, {
-  mode:  "javascript"
-});
-
-  </script>
   <script src="/compile.js"></script>
 </body>
 </html>
