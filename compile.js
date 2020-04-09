@@ -1,5 +1,5 @@
 const submitButton = document.querySelector('#submit')
-const inputArea = document.querySelector('#code-area')
+const inputArea = document.querySelector('#input-area')
 const outputArea = document.querySelector('#output-field')
 
 
