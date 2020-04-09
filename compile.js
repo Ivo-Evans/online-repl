@@ -18,7 +18,7 @@ submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   try {
     eval(inputArea.value)
-  } catch {
-    console.log('Error')
+  } catch (error) {
+    console.log(error)
   }
 })
